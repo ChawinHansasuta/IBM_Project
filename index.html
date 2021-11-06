@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Simple Interest Calculator</h1>
+
+        <label for="principal">Amount</label>
+        <input type="text"  id="principal" name="principal"><br>
+
+        <label for="Rate">Interest Rate</label>
+        <input type="text"  id="rate" name="rate"><br>
+
+        <label for="years">No. of Years</label>
+        <input type="text"  id="years"><br>
+        
+        <button onclick="compute(
+            document.getElementById('principal').value,
+            document.getElementById('rate').value,
+            document.getElementById('years').value
+            )">Compute</button>
+
+        <h3 id="result"></h3>
+
+    </body>
+</html>
